@@ -13,6 +13,9 @@
       ],
       "settings": {
         "terminal.integrated.profiles.linux": {
+          "claude code": {
+            "path": "/home/frappe/.nvm/versions/node/v20.19.2/bin/claude"
+          },
           "frappe bash": {
             "path": "/bin/bash"
           }
@@ -21,6 +24,11 @@
         "debug.node.autoAttach": "disabled"
       }
     }
+  },
+  "remoteEnv": {
+    "NODE_OPTIONS": "--max-old-space-size=4096",
+    "CLAUDE_CONFIG_DIR": "/home/frappe/.claude",
+    "POWERLEVEL9K_DISABLE_GITSTATUS": "true"
   },
   "dockerComposeFile": "./docker-compose.yml",
   "service": "frappe",
